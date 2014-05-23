@@ -4,6 +4,7 @@ var findBowerTrees = require('broccoli-bower');
 var env = require('broccoli-env').getEnv();
 var uglifyJavaScript = require('broccoli-uglify-js');
 var compileES6 = require('broccoli-es6-concatenator');
+var compileSass = require('broccoli-sass');
 
 var appJs = 'app';
 var appCss = 'styles';
@@ -38,5 +39,7 @@ appJsAndBowerDependencies = compileES6(appJsAndBowerDependencies, {
     wrapInEval: false,
     outputFile: '/assets/app.js'
 });
+
+appCss = compileSass([appCss], 'app.scss', 'assets/app.css');
 
 module.exports = mergeTrees([appJsAndBowerDependencies, appCss, publicFiles]);

@@ -20,6 +20,7 @@
         "broccoli-static-compiler": "^0.1.4",
         "broccoli-uglify-js": "^0.1.0",
         "broccoli-es6-concatenator": "^0.1.4",
+        "broccoli-sass": "^0.1.0",
         "broccoli-bower": "^0.2.0"
     }
 }
