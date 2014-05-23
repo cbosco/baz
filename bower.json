@@ -1,6 +1,7 @@
 {
   "name": "baz",
   "dependencies": {
+    "loader.js": "git://github.com/stefanpenner/loader.js",
     "jquery": "~1.9.1"
   }
 }
