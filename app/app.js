@@ -1,11 +1,18 @@
-var Lib = require('app/lib');
+require ('app/filters');
+require ('app/services');
+require ('app/directives');
+require ('app/controllers');
 
-function App() {
-    Lib.default();
-    console.log('app.js included');
-    if (typeof $ !== 'undefined') {
-        console.log('jquery included');
-    }
-}
-
-export default App;
+// Declare app level module which depends on filters, and services
+angular.module('myApp', [
+  'ngRoute',
+  'myApp.filters',
+  'myApp.services',
+  'myApp.directives',
+  'myApp.controllers'
+]).
+config(['$routeProvider', function($routeProvider) {
+  $routeProvider.when('/view1', {templateUrl: 'partials/partial1.html', controller: 'MyCtrl1'});
+  $routeProvider.when('/view2', {templateUrl: 'partials/partial2.html', controller: 'MyCtrl2'});
+  $routeProvider.otherwise({redirectTo: '/view1'});
+}]);

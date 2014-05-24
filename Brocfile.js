@@ -34,7 +34,8 @@ appJsAndBowerDependencies = compileES6(appJsAndBowerDependencies, {
         'app/**/*.js'
     ],
     legacyFilesToAppend: [
-        'jquery.js'
+        'angular.js',
+        'angular-route.js'
     ],
     wrapInEval: false,
     outputFile: '/assets/app.js'

@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
 <head>
   <title>App</title>
   <script src="/assets/app.js"></script>
   <link href="/assets/app.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body>
-    This text delivered with HTML
+    <ul class="menu">
+        <li><a href="#/view1">view1</a></li>
+        <li><a href="#/view2">view2</a></li>
+    </ul>
+
+    <div ng-view></div>
+
+    <div>Angular seed app: v<span app-version></span></div>
     <script>
-        require('app/app').default();
+        require('app/app');
     </script>
 </body>
 </html>
