@@ -8,6 +8,26 @@ However, this will be built tediously from a much simpler broccoli example in or
 
 In theory, you can rebase the history and delete features you don't need.
 
+## Sample Angular project structure
+
+    ├── Brocfile.js
+    ├── app
+    │   ├── app.js
+    │   ├── controllers
+    │   │   ├── my-ctrl-1.js
+    │   │   └── my-ctrl-2.js
+    │   ├── directives.js
+    │   ├── filters.js
+    │   └── services.js
+    ├── bower.json
+    ├── package.json
+    ├── public
+    │   ├── index.html
+    │   └── partials
+    │       ├── partial1.html
+    │       └── partial2.html
+    └── styles
+        └── app.scss
 
 ## Installation
 
