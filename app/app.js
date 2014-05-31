@@ -1,11 +1,11 @@
-require ('app/filters');
-require ('app/services');
-require ('app/directives');
+require ('./filters');
+require ('./services');
+require ('./directives');
 
 // controllers sub-module
 angular.module('myApp.controllers', []);
-require ('app/controllers/my-ctrl-1');
-require ('app/controllers/my-ctrl-2');
+require ('./controllers/my-ctrl-1');
+require ('./controllers/my-ctrl-2');
 
 // Declare app level module which depends on filters, and services
 angular.module('myApp', [
