@@ -2,7 +2,7 @@
 
 ## Goal:
 
-[broccoli](https://github.com/broccolijs/broccoli) + [angular](https://angularjs.org/) + [zurb foundation](http://foundation.zurb.com/) sample application
+[broccoli](https://github.com/broccolijs/broccoli) + [browserify](http://browserify.org/) + [angular](https://angularjs.org/) + [zurb foundation](http://foundation.zurb.com/) sample application
 
 However, this will be built tediously from a much simpler broccoli example in order to illustrate how it works.
 
