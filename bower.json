@@ -2,8 +2,9 @@
   "name": "baz",
   "dependencies": {
     "loader.js": "git://github.com/stefanpenner/loader.js",
-    "angular": "~1.2.17",
-    "angular-route": "~1.2.17",
+    "angular": "~1.2.16",
+    "angular-route": "~1.2.16",
+    "angular-mocks": "~1.2.16",
     "foundation": "~5.2.2"
   }
 }
