@@ -1,6 +1,3 @@
-$body-background: #000;
-$body-foreground: #fad;
-body {
-    background: $body-background;
-    color: $body-foreground;
-}
+// example of customizing SASS
+$button-font-color: #cfc;
+@import "foundation";

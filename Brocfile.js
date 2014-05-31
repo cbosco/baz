@@ -41,6 +41,9 @@ appJsAndBowerDependencies = compileES6(appJsAndBowerDependencies, {
     outputFile: '/assets/app.js'
 });
 
+// a bit of a hardcode/hack but we want to use foundation SCSS files directly
+// and broccoli-bower does not find these files
+appCss = mergeTrees([appCss].concat(['bower_components/foundation/scss']), {overwrite: true});
 appCss = compileSass([appCss], 'app.scss', 'assets/app.css');
 
 module.exports = mergeTrees([appJsAndBowerDependencies, appCss, publicFiles]);
