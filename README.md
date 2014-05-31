@@ -47,3 +47,8 @@ Set `BROCCOLI_ENV` appropriately:
 Then, to build your project into the public directory, type:
 
 	broccoli build public
+
+## TODO
+
+* Source maps
+* test hook for the watcher
