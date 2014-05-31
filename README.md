@@ -11,6 +11,8 @@ In theory, you can rebase the history and delete features you don't need.
 ## Sample Angular project structure
 
     ├── Brocfile.js
+    ├── LICENSE
+    ├── README.md
     ├── app
     │   ├── app.js
     │   ├── controllers
@@ -26,6 +28,10 @@ In theory, you can rebase the history and delete features you don't need.
     │   └── partials
     │       ├── partial1.html
     │       └── partial2.html
+    ├── spec
+    │   ├── filters_spec.js
+    │   ├── services_spec.js
+    │   └── spec_helper.js
     └── styles
         └── app.scss
 
@@ -47,6 +53,12 @@ Set `BROCCOLI_ENV` appropriately:
 Then, to build your project into the public directory, type:
 
 	broccoli build public
+
+## Run tests
+
+	npm test
+
+Note that the tests run without a browser in node using the [angular npm package](https://www.npmjs.org/package/angular) so it will be important to keep this version in sync with the bower packages.
 
 ## TODO
 
