@@ -28,7 +28,8 @@ var appJsAndBowerDependencies = mergeTrees(
         [appJs].concat([
             'bower_components/loader.js',
             'bower_components/angular',
-            'bower_components/angular-route'
+            'bower_components/angular-route',
+            'bower_components/angular-resource'
         ]),
         { overwrite: true }
     );
@@ -42,7 +43,8 @@ appJsAndBowerDependencies = compileES6(appJsAndBowerDependencies, {
     ],
     legacyFilesToAppend: [
         'angular.js',
-        'angular-route.js'
+        'angular-route.js',
+        'angular-resource.js'
     ],
     wrapInEval: false,
     outputFile: '/assets/app.js'

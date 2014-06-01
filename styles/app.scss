@@ -1,3 +1,7 @@
 // example of customizing SASS
 $button-font-color: #cfc;
 @import "foundation";
+
+.reddit-post p {
+    margin-left: 90px;
+}

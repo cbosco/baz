@@ -1,0 +1,13 @@
+<h1><a href="{{data.reddit.data.url}}">{{data.reddit.data.title}}</a></h1>
+
+<img ng-src="{{data.reddit.data.url}}" />
+
+<hr>
+<ul class="no-bullet">
+    <li ng-repeat="comment in data.comments">
+        <blockquote>{{comment.data.body}}</blockquote>
+        <cite>
+            {{comment.data.author}}
+        </cite>
+    </li>
+</ul>

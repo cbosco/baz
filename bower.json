@@ -5,6 +5,7 @@
     "angular": "~1.2.16",
     "angular-route": "~1.2.16",
     "angular-mocks": "~1.2.16",
+    "angular-resource": "~1.2.16",
     "foundation": "~5.2.2"
   }
 }

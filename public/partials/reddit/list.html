@@ -1,0 +1,13 @@
+<h1>Top Reddits</h1>
+<ul class="small-block-grid-2 medium-block-grid-3">
+    <li class="reddit-post" ng-repeat="reddit in data.reddits">
+        <a class="th left" href="#/reddit{{reddit.data.permalink}}">
+            <img ng-src="{{reddit.data.thumbnail}}" />
+        </a>
+        <p>
+            <a href="#/reddit{{reddit.data.permalink}}">
+                {{reddit.data.title}}
+            </a>
+        </p>
+    </li>
+</ul>
