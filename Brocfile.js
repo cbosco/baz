@@ -1,6 +1,5 @@
 var mergeTrees = require('broccoli-merge-trees');
 var pickFiles = require('broccoli-static-compiler');
-var findBowerTrees = require('broccoli-bower');
 var env = require('broccoli-env').getEnv();
 var uglifyJavaScript = require('broccoli-uglify-js');
 var compileES6 = require('broccoli-es6-concatenator');
@@ -25,7 +24,15 @@ if (env === 'production') {
   });
 }
 
-var appJsAndBowerDependencies = mergeTrees([appJs].concat(findBowerTrees()), { overwrite: true });
+var appJsAndBowerDependencies = mergeTrees(
+        [appJs].concat([
+            'bower_components/loader.js',
+            'bower_components/angular',
+            'bower_components/angular-route'
+        ]),
+        { overwrite: true }
+    );
+
 
 // relative to app, bower directories
 appJsAndBowerDependencies = compileES6(appJsAndBowerDependencies, {

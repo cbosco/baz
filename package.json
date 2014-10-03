@@ -22,7 +22,6 @@
         "broccoli-uglify-js": "^0.1.0",
         "broccoli-es6-concatenator": "^0.1.4",
         "broccoli-sass": "^0.1.0",
-        "broccoli-bower": "^0.2.0",
         "angular": "^1.2.16",
         "jasmine-node": "^1.11.0",
         "jsdom": "^0.10.6"
